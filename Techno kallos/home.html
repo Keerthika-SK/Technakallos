@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    
+    <style>
+        .mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>Free Shipping on ALL Orders</h4>
+    <header>
+      <div class="mode" style="margin-top: 30px; margin-right: 10px;" >
+        Dark mode:             
+        <span class="change">OFF</span>
+    </div>
+      <img src="sourceimage/pic.png"class="logo" width="150" height="100">
+      
+      <figure>
+      <img src="sourceimage/person.svg" alt="profile" id="profile">
+  </figure>
+  <figure>
+      <img src="sourceimage/bag-dash.svg" alt="bag" id="cart">
+     </figure>
+  <figure>
+      <img src="sourceimage/heart.svg" id="wish">
+      
+  </figure>
+
+            <div class="head">
+            <a href="#">HOME</a>
+            <a href="#abt">ABOUT US</a>
+            <a href="collection.html">NEW ARRIVAL</a>
+            <a href="collection.html">ON SALE</a>
+                </div>
+    </header>
+    <img src="sourceimage/main.jpeg" height="50%" width=50% >
+
+    <div class="new">
+       <b> <h1>OUR NEWEST BRIDAL ARRIVAL</h1></b>
+        <h3>Shop our ranch inspired jewelry capsule, and take your look to the next level.</h3>
+        <a href="collection.html"><button>SHOP NOW</button></a>
+        </div>
+        <br><br><br><br>
+        <ul>
+          <li><img id="g" src="sourceimage/b1.jpeg" alt=""></li>
+          <li><img id="g" src="sourceimage/b2.avif" alt=""></li>
+          <li><img id="g" src="sourceimage/b3.webp" alt=""></li>
+          <li><img id="g" src="sourceimage/b4.jpg" alt=""></li>
+            <li><img id="g"  src="sourceimage/b5.webp" alt=""></li>
+            <li><img id="g" src="sourceimage/b6.webp" alt=""></li>
+          
+    
+  </ul>
+        <img src="sourceimage/third.png" width="100%">
+        <section class="about-us">
+            <div class="about">
+              <img src="sourceimage/second.jpg" class="pic" />
+              <div id="abt">
+                <h2>About Us</h2>
+                <h5>Welcome to <span>BrideGlow</span></h5>
+                <p>Welcome to BrideGlow!
+
+                    At BrideGlow, we’re dedicated to making your bridal dreams come true with our stunning collection of lehengas and jewelry. Founded with a passion for blending tradition and modern elegance, our brand offers exquisite craftsmanship and timeless designs to make your special day truly unforgettable.
+                    
+                    We pride ourselves on our commitment to quality and personalized service, ensuring that each piece in our collection reflects the beauty and joy of your celebration. Discover the perfect lehenga and jewelry to shine with confidence on your big day.
+                    
+                    Thank you for choosing BrideGlow. We’re honored to be part of your journey!
+                    
+                    </p>
+                
+              </div>
+            </div>
+          </section>
+        <img src="sourceimage/Screenshot 2024-08-26 202704.png" width="100%">
+        <script>
+          $( ".change" ).on("click", function() {
+              if( $( "body" ).hasClass( "dark" )) {
+                  $( "body" ).removeClass( "dark" );
+                  $( ".change" ).text( "OFF" );
+              } else {
+                  $( "body" ).addClass( "dark" );
+                  $( ".change" ).text( "ON" );
+              }
+          });
+      </script>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Designer Wear</h4>
+              <ul>
+                <li><a href="#">Sarees</a></li>
+                <li><a href="#">Lehengas</a></li>
+                <li><a href="#">Gowns</a></li>
+                
+                <li><a href="#">IndoWestern Style</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Blog</a></li>
+                
+                <li><a href="#">BrideGlow Botique</a></li>
+                <li><a href="#">BrideGlow Fashion</a></li>
+                
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Policies</h4>
+              <ul>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>My Account</h4>
+              <ul>
+                <li><a href="#">Shoping Bag</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Order History</a></li>
+                
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
